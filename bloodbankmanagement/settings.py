@@ -13,7 +13,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['bloodbankdb.cxmnkpimuzfc.us-east-1.rds.amazonaws.com']
 # settings.py
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '3.84.98.178']
+
 
 
 INSTALLED_APPS = [
