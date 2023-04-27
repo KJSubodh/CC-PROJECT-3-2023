@@ -11,9 +11,12 @@ SECRET_KEY = '+zy!9k=9pql5gz9bkqjore)k6r!%w0atk(@(!(!zvp5e(t2i8n'
 DEBUG = True
 
 ALLOWED_HOSTS = ['bloodbankdb.cxmnkpimuzfc.us-east-1.rds.amazonaws.com']
-
 # settings.py
+
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '3.84.98.178', '3.84.98.178:8000']
+
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,7 +40,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
 CSRF_COOKIE_SECURE=False
 ROOT_URLCONF = 'bloodbankmanagement.urls'
 
@@ -59,14 +61,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'bloodbankmanagement.wsgi.application'
 
+
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+
 DATABASES = {
-    'default': dj_database_url.parse('postgresql://subodh:********@bloodbankdb.cxmnkpimuzfc.us-east-1.rds.amazonaws.com:5432/bloodbank')
+    'default': dj_database_url.parse('postgresql://subodh:Rutherfordium@bloodbankdb.cxmnkpimuzfc.us-east-1.rds.amazonaws.com:5432/bloodbank')
 }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -82,23 +87,31 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
+
 LANGUAGE_CODE = 'en-us'
+
 TIME_ZONE = 'UTC'
+
 USE_I18N = True
+
 USE_L10N = True
+
 USE_TZ = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
 STATIC_DIR,
  ]
 LOGIN_REDIRECT_URL='/afterlogin'
 
-# for contact us give your gmail id and password
+#for contact us give your gmail id and password
 EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
