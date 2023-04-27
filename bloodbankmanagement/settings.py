@@ -66,7 +66,7 @@ WSGI_APPLICATION = 'bloodbankmanagement.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse('postgresql://subodh:Rutherfordium@bloodbankdb.cxmnkpimuzfc.us-east-1.rds.amazonaws.com:5432/bloodbank')
+    'default': dj_database_url.parse('postgresql://subodh:Apokolipswar_2020@bloodbankdb.cxmnkpimuzfc.us-east-1.rds.amazonaws.com:5432/bloodbank')
 }
 
 # Password validation
